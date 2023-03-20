@@ -1,5 +1,6 @@
 @use "../../abstracts/vars";
 @use "../../abstracts/colors";
+@use "../../abstracts/animations";
 .header{
     background:map-get(colors.$baseColors, "whiteColor");
     height:map-get(vars.$vhCalc, "heightOfHeader");
@@ -12,6 +13,7 @@
     display:grid;
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
 
+ 
     &__logo{
         display:flex;
         font-size: 300%;
@@ -20,6 +22,7 @@
         font-weight: 400;
         justify-content: center;
         grid-column-start: 2;
+
     }
 }
 
